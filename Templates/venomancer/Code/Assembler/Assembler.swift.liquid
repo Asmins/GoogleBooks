@@ -1,0 +1,26 @@
+{% include 'header' %}
+import Foundation
+
+// MARK: - {{ module_info.name }}Assembler
+
+final class {{ module_info.name }}Assembler: NSObject {
+
+    @IBOutlet weak var view: {{ module_info.name }}ViewController!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        let interactor = {{ module_info.name }}Interactor()
+        let presenter = {{ module_info.name }}Presenter()
+        let router = {{ module_info.name }}Router()
+
+        view.presenter = presenter
+        view.moduleInput = presenter
+        interactor.presenter = presenter
+        presenter.view = view
+        presenter.interactor = interactor
+        presenter.router = router
+        router.flowController = view
+    }
+
+}

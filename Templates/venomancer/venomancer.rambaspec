@@ -1,0 +1,27 @@
+name: venomancer
+summary: Swift VIPER module template.
+author: Alexander Tovstonozhenko
+version: "0.1.0"
+license: MIT
+code_files:
+  - name: Assembler/Assember.swift
+    path: Code/Assembler/Assembler.swift.liquid
+  - name: View/ViewInterface.swift
+    path: Code/View/ViewInterface.swift.liquid
+  - name: View/ViewController.swift
+    path: Code/View/ViewController.swift.liquid
+  - name: Interactor/InteractorInterface.swift
+    path: Code/Interactor/InteractorInterface.swift.liquid
+  - name: Interactor/Interactor.swift
+    path: Code/Interactor/Interactor.swift.liquid
+  - name: Presenter/PresenterInterface.swift
+    path: Code/Presenter/PresenterInterface.swift.liquid
+  - name: Presenter/Presenter.swift
+    path: Code/Presenter/Presenter.swift.liquid
+  - name: Router/RouterInterface.swift
+    path: Code/Router/RouterInterface.swift.liquid
+  - name: Router/Router.swift
+    path: Code/Router/Router.swift.liquid
+dependencies:
+  - Chamomile
+

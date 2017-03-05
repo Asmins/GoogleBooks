@@ -1,0 +1,6 @@
+[submodule "Carthage/Checkouts/Aspects"]
+	path = Carthage/Checkouts/Aspects
+	url = https://github.com/steipete/Aspects.git
+[submodule "Carthage/Checkouts/Perform"]
+	path = Carthage/Checkouts/Perform
+	url = https://github.com/thoughtbot/Perform.git

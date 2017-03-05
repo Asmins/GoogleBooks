@@ -1,0 +1,18 @@
+{% include 'header' %}
+import Chamomile
+
+// MARK: - {{ module_info.name }}ViewController
+
+final class {{ module_info.name }}ViewController: UIViewController, FlowController {
+
+    // MARK: - VIPER stack
+
+    var presenter: {{ module_info.name }}ViewOutput!
+
+}
+
+// MARK: - {{ module_info.name }}ViewInput
+
+extension {{ module_info.name }}ViewController: {{ module_info.name }}ViewInput {
+
+}

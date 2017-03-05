@@ -1,0 +1,31 @@
+### Headers settings
+company: GoogleBooksTestApp
+
+### Xcode project settings
+project_name: GoogleBooksTestApplication
+xcodeproj_path: GoogleBooksTestApplication.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: GoogleBooksTestApplication
+
+# The file path for new modules
+project_file_path: GoogleBooksTestApplication/Modules
+
+# The Xcode group path to new modules
+project_group_path: GoogleBooksTestApplication/Modules
+
+### Dependencies settings section
+podfile_path: Podfile
+cartfile_path: Cartfile
+
+### Templates
+templates:
+#- {name: local_template_name, local: 'absolute/file/path'}
+#- {name: remote_template_name, git: 'https://github.com/igrekde/remote_template'}
+#- {name: catalog_template_name}
+
+catalogs:
+  - 'https://bitbucket.org/alextov/generamba-templates'
+templates:
+  - {name: venomancer}

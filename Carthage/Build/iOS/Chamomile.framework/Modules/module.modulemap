@@ -1,0 +1,10 @@
+framework module Chamomile {
+  umbrella header "Chamomile.h"
+
+  export *
+  module * { export * }
+}
+
+module Chamomile.Swift {
+    header "Chamomile-Swift.h"
+}

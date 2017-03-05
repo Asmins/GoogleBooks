@@ -1,0 +1,26 @@
+{% include 'header' %}
+import Chamomile
+
+// MARK: - {{ module_info.name }}ViewOutput
+
+protocol {{ module_info.name }}ViewOutput: class {
+
+}
+
+// MARK: - {{ module_info.name }}InteractorOutput
+
+protocol {{ module_info.name }}InteractorOutput: class {
+
+}
+
+// MARK: - {{ module_info.name }}ModuleInput
+
+protocol {{ module_info.name }}ModuleInput: ModuleInput {
+
+}
+
+// MARK: - {{ module_info.name }}ModuleOutput
+
+protocol {{ module_info.name }}ModuleOutput: ModuleOutput {
+
+}

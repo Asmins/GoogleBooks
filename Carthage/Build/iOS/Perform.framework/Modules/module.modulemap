@@ -1,0 +1,10 @@
+framework module Perform {
+  umbrella header "Perform.h"
+
+  export *
+  module * { export * }
+}
+
+module Perform.Swift {
+    header "Perform-Swift.h"
+}
