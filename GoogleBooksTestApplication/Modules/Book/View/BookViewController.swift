@@ -15,7 +15,7 @@ final class BookViewController: UIViewController, FlowController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     // MARK: - VIPER stack
-   
+
     var presenter: BookViewOutput!
     var numberSelectionScreen: Int!
 
@@ -44,7 +44,10 @@ final class BookViewController: UIViewController, FlowController {
         numberSelectionScreen = 1
         self.bookButton.isSelected = false
         self.basketButton.isSelected = true
-        presenter.getBookFromBD() 
+        searchBar.isUserInteractionEnabled = false
+        searchBar.placeholder = "Not active"
+        searchBar.text = ""
+        presenter.getBookFromBD()
     }
 
     @IBAction func bookTap(_ sender: Any) {
@@ -52,6 +55,8 @@ final class BookViewController: UIViewController, FlowController {
         numberSelectionScreen = 0
         self.bookButton.isSelected = true
         self.basketButton.isSelected = false
+        searchBar.isUserInteractionEnabled = true
+        searchBar.placeholder = "Search any books"
     }
 }
 
